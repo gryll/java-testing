@@ -7,3 +7,15 @@
 apply plugin: 'java'
 apply plugin: 'application'
 mainClassName = 'hello.HelloWorld'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.testng:testng:7.5'
+}
+
+test {
+    useTestNG()
+}
